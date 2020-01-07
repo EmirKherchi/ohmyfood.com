@@ -1,0 +1,71 @@
+/*--Utils--*/
+
+/*variables*/
+
+$bgcolor: #579c87;
+$logocolor: #fdcb46;
+
+/*--base--*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+/*--Composants--*/
+
+/*Header*/
+
+header {
+  width: 100%;
+  padding: 5%;
+  background-color: $bgcolor;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 18%;
+  }
+}
+
+/*--pages--*/
+
+/*main _ menu*/
+
+.menu {
+  margin: 5%;
+  border: 1px solid $bgcolor;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem;
+
+  &__card {
+    border: 1px solid black;
+    text-align: center;
+  }
+}
+
+/*soon*/
+
+.soon {
+  &__block {
+    background-color: $bgcolor;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 20%;
+
+    h1 {
+      color: $logocolor;
+      font-weight: 300px;
+      letter-spacing: 1px;
+      padding: 10px;
+    }
+  }
+}
