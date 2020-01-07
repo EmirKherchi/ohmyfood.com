@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood.com",
+  "version": "1.0.0",
+  "description": "projet3_ocr",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmirKherchi/ohmyfood.com.git"
+  },
+  "author": "ekherchi.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmirKherchi/ohmyfood.com/issues"
+  },
+  "homepage": "https://github.com/EmirKherchi/ohmyfood.com#readme"
+}
