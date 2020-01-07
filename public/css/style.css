@@ -1,5 +1,6 @@
 /*--Utils--*/
 /*variables*/
+/*mixins*/
 /*--base--*/
 * {
   box-sizing: border-box;
@@ -61,7 +62,6 @@ footer .footer__contact {
 /*main _ menu*/
 .menu {
   margin: 5% 10%;
-  border: 1px solid #579c87;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -72,7 +72,7 @@ footer .footer__contact {
   text-align: center;
   align-self: center;
   padding: 150px 0px;
-  margin: 0 150px;
+  margin: 0 200px;
 }
 .menu__card--lanote {
   background-color: #fcdfdb;
@@ -80,6 +80,9 @@ footer .footer__contact {
 }
 .menu__card--lanote--logo {
   width: 20%;
+}
+.menu__card--lechic {
+  background-color: #fff5fe;
 }
 .menu__card--lechic h2 {
   background: -moz-linear-gradient(left, #c77412 0%, #905bfd 100%);
@@ -93,6 +96,38 @@ footer .footer__contact {
 }
 .menu__card--lechic h1 {
   color: #c77412;
+}
+.menu__card--ledelice {
+  background-color: #f9f9f9;
+}
+.menu__card--ledelice h2 {
+  background: -moz-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #0536e1), color-stop(100%, #74b4f0));
+  background: -webkit-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
+  background: -o-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
+  background: -ms-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
+  background: linear-gradient(to right, #0536e1 0%, #74b4f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__card--ledelice h1 {
+  color: #1982e5;
+}
+.menu__card--lapalette {
+  background-color: #fdfffd;
+}
+.menu__card--lapalette h2 {
+  background: -moz-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #3e9339), color-stop(100%, #cbfe9a));
+  background: -webkit-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
+  background: -o-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
+  background: -ms-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
+  background: linear-gradient(to right, #3e9339 0%, #cbfe9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__card--lapalette h1 {
+  color: #97fd35;
 }
 
 /*soon*/

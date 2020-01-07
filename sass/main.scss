@@ -1,163 +1,169 @@
 /*--Utils--*/
 
+
 /*variables*/
 
 $bgcolor: #579c87;
 $logocolor: #fdcb46;
 $lanotebg: #fcdfdb;
-
 $lechic1: #c77412;
 $lechic2: #905bfd;
+$lechicbg: #fff5fe;
+$ledelice1: #0536e1;
+$ledelice2: #74b4f0;
+$ledelicebg: #f9f9f9;
+$lapalettebg: #fdfffd;
+$lapalette1: #3e9339;
+$lapalette2: #cbfe9a;
+
+/*mixins*/
 
 @mixin footer_links($float) {
-  color: $logocolor;
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  float: $float;
-  text-decoration: none;
-  margin: 5px;
+    color: $logocolor;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    float: $float;
+    text-decoration: none;
+    margin: 5px;
 }
-@mixin menu_gradient ($color1,$color2) {
-  background: -moz-linear-gradient(
-    left,
-    $color1 0%,
-    $color2 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop(0%, $color1),
-    color-stop(100%, $color2)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    $color1 0%,
-    $color2 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    $color1 0%,
-    $color2 100%
-  );
-  background: -ms-linear-gradient(
-    left,
-    $color1 0%,
-    $color2 100%
-  );
-  background: linear-gradient(
-    to right,
-    $color1 0%,
-    $color2 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+@mixin menu_gradient($color1, $color2) {
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -webkit-gradient( left top, right top, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /*--base--*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  a {
-    text-decoration: none;
-  }
+    margin: 0;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    a {
+        text-decoration: none;
+    }
 }
 
+
 /*--Composants--*/
+
 
 /*Header*/
 
 header {
-  width: 100%;
-  padding: 2%;
-  position: sticky;
-  top: 0px;
-  background-color: $bgcolor;
-
-  img {
-    display: block;
-    margin: auto;
-    width: 15%;
-  }
+    width: 100%;
+    padding: 2%;
+    position: sticky;
+    top: 0px;
+    background-color: $bgcolor;
+    img {
+        display: block;
+        margin: auto;
+        width: 15%;
+    }
 }
+
+
 /*footer*/
-footer {
-  position: sticky;
-  bottom: 0px;
-  width: 100%;
-  display: inline-block;
-  padding: 20px;
-  background-color: $bgcolor;
 
-  .footer__mentions {
-    @include footer_links(left);
-  }
-  .footer__contact {
-    @include footer_links(right);
-  }
+footer {
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    background-color: $bgcolor;
+    .footer__mentions {
+        @include footer_links(left);
+    }
+    .footer__contact {
+        @include footer_links(right);
+    }
 }
+
 
 /*--pages--*/
+
 
 /*main _ menu*/
 
 .menu {
-  margin: 5% 10%;
-  border: 1px solid $bgcolor;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 3rem;
-
-  &__card {
-    border: 1px solid rgb(223, 223, 223);
-    text-align: center;
-    align-self: center;
-    padding: 150px 0px;
-    margin: 0 150px;
-
-    &--lanote {
-      background-color: $lanotebg;
-      padding: 117px 0px;
-
-      &--logo {
-        width: 20%;
-      }
+    margin: 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+    &__card {
+        border: 1px solid rgb(223, 223, 223);
+        text-align: center;
+        align-self: center;
+        padding: 150px 0px;
+        margin: 0 200px;
+        &--lanote {
+            background-color: $lanotebg;
+            padding: 117px 0px;
+            &--logo {
+                width: 20%;
+            }
+        }
+        &--lechic {
+            background-color: $lechicbg;
+            h2 {
+                @include menu_gradient($lechic1, $lechic2);
+            }
+            h1 {
+                color: $lechic1;
+            }
+        }
+        &--ledelice {
+            background-color: $ledelicebg;
+            h2 {
+                @include menu_gradient($ledelice1, $ledelice2);
+            }
+            h1 {
+                color: darken($ledelice2, 20%);
+            }
+        }
+        &--lapalette {
+            background-color: $lapalettebg;
+            h2 {
+                @include menu_gradient($lapalette1, $lapalette2);
+            }
+            h1 {
+                color: darken($lapalette2, 20%);
+            }
+        }
     }
-    &--lechic {
-      h2 {
-        @include menu_gradient($lechic1,$lechic2);
-      }
-      h1 {
-        color: $lechic1;
-      }
-    }
-  }
 }
+
 
 /*soon*/
 
 .soon {
-  &__block {
-    display: block;
-    margin: auto;
-    width: 300px;
-    margin-bottom: 100px;
-
-    h1 {
-      color: $logocolor;
-      font-weight: 300;
-      letter-spacing: 1px;
-      padding: 10px 0px;
-      background-color: $bgcolor;
-      border-radius: 10px;
-      text-align: center;
+    &__block {
+        display: block;
+        margin: auto;
+        width: 300px;
+        margin-bottom: 100px;
+        h1 {
+            color: $logocolor;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 10px 0px;
+            background-color: $bgcolor;
+            border-radius: 10px;
+            text-align: center;
+        }
     }
-  }
 }
