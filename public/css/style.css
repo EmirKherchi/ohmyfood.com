@@ -8,6 +8,7 @@
 body {
   margin: 0;
   font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 body a {
   text-decoration: none;
@@ -65,12 +66,33 @@ footer .footer__contact {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 3rem;
-  height: 900px;
 }
 .menu__card {
-  border: 1px solid black;
+  border: 1px solid #dfdfdf;
   text-align: center;
-  margin: 10px 80px;
+  align-self: center;
+  padding: 150px 0px;
+  margin: 0 150px;
+}
+.menu__card--lanote {
+  background-color: #fcdfdb;
+  padding: 117px 0px;
+}
+.menu__card--lanote--logo {
+  width: 20%;
+}
+.menu__card--lechic h2 {
+  background: -moz-linear-gradient(left, #c77412 0%, #905bfd 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #c77412), color-stop(100%, #905bfd));
+  background: -webkit-linear-gradient(left, #c77412 0%, #905bfd 100%);
+  background: -o-linear-gradient(left, #c77412 0%, #905bfd 100%);
+  background: -ms-linear-gradient(left, #c77412 0%, #905bfd 100%);
+  background: linear-gradient(to right, #c77412 0%, #905bfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__card--lechic h1 {
+  color: #c77412;
 }
 
 /*soon*/
