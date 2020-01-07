@@ -81,6 +81,10 @@ footer .footer__contact {
 .menu__card--lanote--logo {
   width: 20%;
 }
+.menu__card--lanote h2,
+.menu__card--lanote h1 {
+  color: #3b2205;
+}
 .menu__card--lechic {
   background-color: #fff5fe;
 }

@@ -116,6 +116,10 @@ footer {
             &--logo {
                 width: 20%;
             }
+            h2,
+            h1 {
+                color: darken($lechic1, 30%);
+            }
         }
         &--lechic {
             background-color: $lechicbg;
