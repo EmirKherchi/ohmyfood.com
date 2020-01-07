@@ -5,15 +5,29 @@
 $bgcolor: #579c87;
 $logocolor: #fdcb46;
 
+@mixin footer_links($float) {
+  color: $logocolor;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  float: $float;
+  text-decoration: none;
+  margin: 5px;
+}
+
 /*--base--*/
 
 * {
   box-sizing: border-box;
+  
 }
 
 body {
   margin: 0;
   font-family: "roboto", Arial, Helvetica, sans-serif;
+  a {
+    text-decoration: none;
+  }
 }
 
 /*--Composants--*/
@@ -22,13 +36,32 @@ body {
 
 header {
   width: 100%;
-  padding: 5%;
+  padding: 2%;
+  position: sticky;
+  top: 0px;
   background-color: $bgcolor;
 
   img {
     display: block;
     margin: auto;
-    width: 18%;
+    width: 15%;
+  }
+}
+/*footer*/
+footer {
+  
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  display: inline-block;
+  padding: 20px;
+  background-color: $bgcolor;
+
+  .footer__mentions {
+    @include footer_links(left);
+  }
+  .footer__contact {
+    @include footer_links(right);
   }
 }
 
@@ -37,16 +70,18 @@ header {
 /*main _ menu*/
 
 .menu {
-  margin: 5%;
+  margin: 5% 10%;
   border: 1px solid $bgcolor;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 3rem;
-
+  height: 900px; //a enlever
+  
   &__card {
     border: 1px solid black;
     text-align: center;
+    margin: 10px 80px;
   }
 }
 
@@ -54,18 +89,19 @@ header {
 
 .soon {
   &__block {
-    background-color: $bgcolor;
-    border-radius: 10px;
-    text-align: center;
     display: block;
     margin: auto;
-    max-width: 20%;
+    width: 300px;
+    margin-bottom: 100px;
 
     h1 {
       color: $logocolor;
-      font-weight: 300px;
+      font-weight: 300;
       letter-spacing: 1px;
-      padding: 10px;
+      padding: 10px 0px;
+      background-color: $bgcolor;
+      border-radius: 10px;
+      text-align: center;
     }
   }
 }
