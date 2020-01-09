@@ -1,5 +1,22 @@
 /*--Utils--*/
-
+:/*keyframes*/
+@keyframes zoomin{
+  25%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.2);
+    opacity: 0.7;   
+  }
+  100%{
+    
+    transform: scale(1.5);
+    opacity: 0.5;
+   
+  }
+  
+}
 /*maps*/
 
 $font_menu: (
@@ -31,7 +48,7 @@ $lapalette2: #cbfe9a;
 
 @mixin kalam {
   font-family: map-get($font_menu, "kalam");
-  font-weight: 100;
+  font-weight: 200;
 }
 
 @mixin footer_links($float) {
@@ -42,6 +59,11 @@ $lapalette2: #cbfe9a;
   float: $float;
   text-decoration: none;
   margin: 5px;
+}
+@mixin card($bgcard) {
+  background-color: $bgcard;
+  padding-top: 50%;
+  height: 450px;
 }
 
 @mixin menu_gradient($color1, $color2) {
@@ -72,6 +94,12 @@ body {
   font-size: 14px;
   a {
     text-decoration: none;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 23px;
   }
 }
 
@@ -119,15 +147,19 @@ footer {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-content: center;
-  
 
   &__card {
     box-shadow: 0px 0px 15px rgb(223, 223, 223);
     text-align: center;
-    padding-top: 50%;
+    overflow: hidden;
+
+    & > div:hover {
+      animation: zoomin 300ms ease both;
+      cursor: pointer;
+    }
 
     &--lanote {
-      background-color: $lanotebg;
+      @include card($lanotebg);
 
       &--logo {
         width: 10%;
@@ -148,7 +180,7 @@ footer {
     }
 
     &--lechic {
-      background-color: $lechicbg;
+      @include card($lechicbg);
       h2 {
         font-family: map-get($font_menu, "lechich2");
         @include menu_gradient($lechic1, $lechic2);
@@ -160,7 +192,7 @@ footer {
     }
 
     &--ledelice {
-      background-color: $ledelicebg;
+      @include card($ledelicebg);
       h2 {
         font-family: map-get($font_menu, "ledeliceh2");
         @include menu_gradient($ledelice1, $ledelice2);
@@ -172,7 +204,7 @@ footer {
     }
 
     &--lapalette {
-      background-color: $lapalettebg;
+      @include card($lapalettebg);
       h2 {
         font-family: map-get($font_menu, "lapaletteh2");
         @include menu_gradient($lapalette1, $lapalette2);
