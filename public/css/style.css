@@ -60,24 +60,25 @@ footer .footer__contact {
 /*--pages--*/
 /*main _ menu*/
 .menu {
-  margin: 5% 10%;
+  margin: 5% 28%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5rem;
+  gap: 3em 0em;
+  justify-items: center;
 }
 .menu__card {
   box-shadow: 0px 0px 15px #dfdfdf;
   text-align: center;
-  align-self: center;
+  height: 450px;
+  width: 300px;
+  padding-top: 35%;
 }
 .menu__card--lanote {
   background-color: #fcdfdb;
 }
 .menu__card--lanote--logo {
-  width: 20%;
-  position: relative;
-  top: 15px;
+  width: 10%;
 }
 .menu__card--lanote h2 {
   font-family: "Ma Shan Zheng";
