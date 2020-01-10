@@ -3,6 +3,14 @@
 /**********************************************************************/
 /*********************************************************************************/
 /*keyframes*/
+@keyframes exclamation {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
 @keyframes zoomin {
   0% {
     transform: scale(1);
@@ -274,19 +282,38 @@ footer a {
 }
 
 /*soon*/
-.soon__block {
+.soon {
   display: block;
   margin: auto;
-  width: 300px;
+  width: 400px;
+  overflow: visible;
+}
+.soon__block {
   border-radius: 10px;
   margin-bottom: 100px;
   background-color: #579c87;
+  overflow: visible;
+}
+.soon__block--first_exclmt {
+  animation: exclamation 1000ms ease both infinite;
+  animation-direction: reverse;
+}
+.soon__block--scnd_exclmt {
+  animation: exclamation 1000ms ease both infinite;
+  animation-direction: reverse;
+}
+.soon__block--third_exclmt {
+  animation: exclamation 1000ms ease both infinite;
+  animation-direction: reverse;
 }
 .soon__block h1 {
+  position: relative;
   color: #fdcb46;
   font-weight: 300;
   letter-spacing: 1px;
+  padding: 5px 8px;
   text-align: center;
+  overflow: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

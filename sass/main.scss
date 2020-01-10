@@ -35,6 +35,16 @@ $screen-lg-min: 992px;
 
 /*********************************************************************************/
 /*keyframes*/
+
+@keyframes exclamation {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+
 @keyframes zoomin {
   0% {
     transform: scale(1);
@@ -98,6 +108,10 @@ $lapalette1: #3e9339;
 $lapalette2: #cbfe9a;
 
 /*mixins*/
+@mixin exclamation_points {
+  animation: exclamation 1000ms ease both infinite;
+  animation-direction: reverse;
+}
 
 @mixin kalam {
   font-family: map-get($font_menu, "kalam");
@@ -121,7 +135,7 @@ $lapalette2: #cbfe9a;
   background-color: $bgcard;
   padding-top: 50%;
   height: 450px;
-  @include sm{
+  @include sm {
     height: 250px;
     width: 150px;
     padding-top: 40%;
@@ -226,14 +240,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   &__card {
     box-shadow: 0px 0px 15px rgb(223, 223, 223);
     text-align: center;
     overflow: hidden;
-    @include sm{
+    @include sm {
       margin: 10px 0px;
     }
 
@@ -304,22 +317,33 @@ footer {
 /*soon*/
 
 .soon {
+  display: block;
+  margin: auto;
+  width: 400px;
+  overflow: visible;
   &__block {
-    display: block;
-    margin: auto;
-    width: 300px;
-    
     border-radius: 10px;
     margin-bottom: 100px;
     background-color: $bgcolor;
+    overflow: visible;
+    &--first_exclmt {
+      @include exclamation_points;
+    }
+    &--scnd_exclmt {
+      @include exclamation_points;
+    }
+    &--third_exclmt {
+      @include exclamation_points;
+    }
+
     h1 {
+      position: relative;
       color: $logocolor;
       font-weight: 300;
       letter-spacing: 1px;
-      
-      
-      
+      padding: 5px 8px;
       text-align: center;
+      overflow: visible;
     }
   }
 }
