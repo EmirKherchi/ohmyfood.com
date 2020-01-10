@@ -183,7 +183,7 @@ footer a {
   }
 }
 .menu__card--lanote--logo {
-  width: 10%;
+  width: 15%;
 }
 .menu__card--lanote h2 {
   font-family: "Ma Shan Zheng";
@@ -286,7 +286,12 @@ footer a {
   display: block;
   margin: auto;
   width: 400px;
-  overflow: visible;
+}
+@media (max-width: 576px) {
+  .soon {
+    margin-top: 55px;
+    width: 200px;
+  }
 }
 .soon__block {
   border-radius: 10px;
@@ -314,6 +319,11 @@ footer a {
   padding: 5px 8px;
   text-align: center;
   overflow: visible;
+}
+@media (max-width: 576px) {
+  .soon__block h1 {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

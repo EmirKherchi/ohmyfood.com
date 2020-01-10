@@ -1,96 +1,91 @@
 /*--Utils--*/
 
+
 /*--variables breakpoint et mixins breakpoint--*/
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
-
 // Small tablets (portrait view)
 $screen-md-min: 768px;
-
 // Tablets and small desktops
 $screen-lg-min: 992px;
 
 /**********************************************************************/
+
 // Small devices
 @mixin sm {
-  @media (max-width: #{$screen-sm-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
 }
 
 // Medium devices
 @mixin md {
-  @media (max-width: #{$screen-md-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
 }
 
 // Large devices
 @mixin lg {
-  @media (max-width: #{$screen-lg-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
 }
 
+
 /*********************************************************************************/
+
+
 /*keyframes*/
 
 @keyframes exclamation {
-  to {
-    opacity: 0;
-  }
-  from {
-    opacity: 1;
-  }
+    to {
+        opacity: 0;
+    }
+    from {
+        opacity: 1;
+    }
 }
 
 @keyframes zoomin {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  25% {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.3);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0.5;
-  }
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
 }
+
 @keyframes shake {
-  10% {
-    transform: translatex(-1px);
-  }
-
-  25% {
-    transform: translatex(2px);
-  }
-
-  50% {
-    transform: translatex(-3px);
-  }
-
-  100% {
-    transform: translatex(1px);
-  }
+    10% {
+        transform: translatex(-1px);
+    }
+    25% {
+        transform: translatex(2px);
+    }
+    50% {
+        transform: translatex(-3px);
+    }
+    100% {
+        transform: translatex(1px);
+    }
 }
+
+
 /*maps*/
 
-$font_menu: (
-  "lanoteh2": "Ma Shan Zheng",
-  "lanoteh1": "Itim",
-  "lechich2": "Gabriela",
-  "lechich1": "Vidaloka",
-  "kalam": "Kalam",
-  "ledeliceh2": "Alex Brush",
-  "lapaletteh2": "Kaushan Script"
-);
+$font_menu: ( "lanoteh2": "Ma Shan Zheng", "lanoteh1": "Itim", "lechich2": "Gabriela", "lechich1": "Vidaloka", "kalam": "Kalam", "ledeliceh2": "Alex Brush", "lapaletteh2": "Kaushan Script");
 
 /*variables*/
 
@@ -108,242 +103,243 @@ $lapalette1: #3e9339;
 $lapalette2: #cbfe9a;
 
 /*mixins*/
+
 @mixin exclamation_points {
-  animation: exclamation 1000ms ease both infinite;
-  animation-direction: reverse;
+    animation: exclamation 1000ms ease both infinite;
+    animation-direction: reverse;
 }
 
 @mixin kalam {
-  font-family: map-get($font_menu, "kalam");
-  font-weight: 200;
+    font-family: map-get($font_menu, "kalam");
+    font-weight: 200;
 }
 
 @mixin footer_links($float) {
-  color: $logocolor;
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  float: $float;
-  text-decoration: none;
-  margin: 5px;
-  @include sm {
-    font-size: 15px;
-    padding: 0px;
-  }
+    color: $logocolor;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    float: $float;
+    text-decoration: none;
+    margin: 5px;
+    @include sm {
+        font-size: 15px;
+        padding: 0px;
+    }
 }
+
 @mixin card($bgcard) {
-  background-color: $bgcard;
-  padding-top: 50%;
-  height: 450px;
-  @include sm {
-    height: 250px;
-    width: 150px;
-    padding-top: 40%;
-  }
+    background-color: $bgcard;
+    padding-top: 50%;
+    height: 450px;
+    @include sm {
+        height: 250px;
+        width: 150px;
+        padding-top: 40%;
+    }
 }
 
 @mixin menu_gradient($color1, $color2) {
-  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop(0%, $color1),
-    color-stop(100%, $color2)
-  );
-  background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
-  background: -o-linear-gradient(left, $color1 0%, $color2 100%);
-  background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
-  background: linear-gradient(to right, $color1 0%, $color2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -webkit-gradient( left top, right top, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /*--base--*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  a {
-    text-decoration: none;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 23px;
-  }
+    margin: 0;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 23px;
+    }
 }
 
+
 /*--Composants--*/
+
 
 /*Header*/
 
 header {
-  width: 100%;
-  height: 15%;
-  background-color: $bgcolor;
-  img {
-    display: block;
-    margin: auto;
-    width: 15%;
-    @include md {
-      width: 35%;
+    width: 100%;
+    height: 15%;
+    background-color: $bgcolor;
+    img {
+        display: block;
+        margin: auto;
+        width: 15%;
+        @include md {
+            width: 35%;
+        }
+        @include sm {
+            width: 55%;
+        }
     }
-    @include sm {
-      width: 55%;
-    }
-  }
 }
+
 
 /*footer*/
 
 footer {
-  position: sticky;
-  bottom: 0px;
-  width: 100%;
-  display: inline-block;
-  padding: 20px;
-  background-color: $bgcolor;
-  @include md {
-    padding: 10px;
-  }
-  .footer__mentions {
-    @include footer_links(left);
-  }
-  .footer__contact {
-    @include footer_links(right);
-  }
-  & a {
-    animation: shake 600ms both infinite;
-  }
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    background-color: $bgcolor;
+    @include md {
+        padding: 10px;
+    }
+    .footer__mentions {
+        @include footer_links(left);
+    }
+    .footer__contact {
+        @include footer_links(right);
+    }
+    & a {
+        animation: shake 600ms both infinite;
+    }
 }
 
+
 /*--pages--*/
+
 
 /*main _ menu*/
 
 .menu {
-  margin: 5% 0;
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 450px 450px;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: center;
-  @include sm {
-    display: flex;
-    flex-direction: column;
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 450px 450px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: center;
-    align-items: center;
-  }
-
-  &__card {
-    box-shadow: 0px 0px 15px rgb(223, 223, 223);
-    text-align: center;
-    overflow: hidden;
     @include sm {
-      margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    & > div:hover {
-      animation: zoomin 200ms ease-out both;
-      cursor: pointer;
+    &__card {
+        box-shadow: 0px 0px 15px rgb(223, 223, 223);
+        text-align: center;
+        overflow: hidden;
+        @include sm {
+            margin: 10px 0px;
+        }
+        &>div:hover {
+            animation: zoomin 200ms ease-out both;
+            cursor: pointer;
+        }
+        &--lanote {
+            @include card($lanotebg);
+            &--logo {
+                width: 15%;
+            }
+            h2 {
+                font-family: map-get($font_menu, "lanoteh2");
+                color: darken($lechic1, 30%);
+                font-size: 25px;
+                letter-spacing: 1px;
+                font-weight: 200;
+            }
+            h1 {
+                font-family: map-get($font_menu, "lanoteh1");
+                color: darken($lechic1, 30%);
+                text-transform: uppercase;
+            }
+        }
+        &--lechic {
+            @include card($lechicbg);
+            h2 {
+                font-family: map-get($font_menu, "lechich2");
+                @include menu_gradient($lechic1, $lechic2);
+            }
+            h1 {
+                font-family: map-get($font_menu, "lechich1");
+                color: $lechic1;
+            }
+        }
+        &--ledelice {
+            @include card($ledelicebg);
+            h2 {
+                font-family: map-get($font_menu, "ledeliceh2");
+                @include menu_gradient($ledelice1, $ledelice2);
+            }
+            h1 {
+                color: darken($ledelice2, 20%);
+                @include kalam;
+            }
+        }
+        &--lapalette {
+            @include card($lapalettebg);
+            h2 {
+                font-family: map-get($font_menu, "lapaletteh2");
+                @include menu_gradient($lapalette1, $lapalette2);
+            }
+            h1 {
+                color: darken($lapalette2, 45%);
+                @include kalam;
+            }
+        }
     }
-
-    &--lanote {
-      @include card($lanotebg);
-
-      &--logo {
-        width: 10%;
-      }
-      h2 {
-        font-family: map-get($font_menu, "lanoteh2");
-        color: darken($lechic1, 30%);
-        font-size: 25px;
-        letter-spacing: 1px;
-        font-weight: 200;
-      }
-
-      h1 {
-        font-family: map-get($font_menu, "lanoteh1");
-        color: darken($lechic1, 30%);
-        text-transform: uppercase;
-      }
-    }
-
-    &--lechic {
-      @include card($lechicbg);
-      h2 {
-        font-family: map-get($font_menu, "lechich2");
-        @include menu_gradient($lechic1, $lechic2);
-      }
-      h1 {
-        font-family: map-get($font_menu, "lechich1");
-        color: $lechic1;
-      }
-    }
-
-    &--ledelice {
-      @include card($ledelicebg);
-      h2 {
-        font-family: map-get($font_menu, "ledeliceh2");
-        @include menu_gradient($ledelice1, $ledelice2);
-      }
-      h1 {
-        color: darken($ledelice2, 20%);
-        @include kalam;
-      }
-    }
-
-    &--lapalette {
-      @include card($lapalettebg);
-      h2 {
-        font-family: map-get($font_menu, "lapaletteh2");
-        @include menu_gradient($lapalette1, $lapalette2);
-      }
-      h1 {
-        color: darken($lapalette2, 45%);
-        @include kalam;
-      }
-    }
-  }
 }
+
 
 /*soon*/
 
 .soon {
-  display: block;
-  margin: auto;
-  width: 400px;
-  overflow: visible;
-  &__block {
-    border-radius: 10px;
-    margin-bottom: 100px;
-    background-color: $bgcolor;
-    overflow: visible;
-    &--first_exclmt {
-      @include exclamation_points;
+    display: block;
+    margin: auto;
+    width: 400px;
+    @include sm {
+        margin-top: 55px;
+        width: 200px;
     }
-    &--scnd_exclmt {
-      @include exclamation_points;
+    &__block {
+        border-radius: 10px;
+        margin-bottom: 100px;
+        background-color: $bgcolor;
+        overflow: visible;
+        &--first_exclmt {
+            @include exclamation_points;
+        }
+        &--scnd_exclmt {
+            @include exclamation_points;
+        }
+        &--third_exclmt {
+            @include exclamation_points;
+        }
+        h1 {
+            position: relative;
+            color: $logocolor;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 5px 8px;
+            text-align: center;
+            overflow: visible;
+            @include sm {
+                font-size: 15px;
+            }
+        }
     }
-    &--third_exclmt {
-      @include exclamation_points;
-    }
-
-    h1 {
-      position: relative;
-      color: $logocolor;
-      font-weight: 300;
-      letter-spacing: 1px;
-      padding: 5px 8px;
-      text-align: center;
-      overflow: visible;
-    }
-  }
 }
