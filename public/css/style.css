@@ -1,4 +1,7 @@
 /*--Utils--*/
+/*--variables breakpoint et mixins breakpoint--*/
+/**********************************************************************/
+/*********************************************************************************/
 /*keyframes*/
 @keyframes zoomin {
   0% {
@@ -59,13 +62,23 @@ body h2 {
 /*Header*/
 header {
   width: 100%;
-  padding: 2%;
+  height: 15%;
   background-color: #579c87;
 }
 header img {
   display: block;
   margin: auto;
   width: 15%;
+}
+@media (max-width: 768px) {
+  header img {
+    width: 35%;
+  }
+}
+@media (max-width: 576px) {
+  header img {
+    width: 55%;
+  }
 }
 
 /*footer*/
@@ -77,6 +90,11 @@ footer {
   padding: 20px;
   background-color: #579c87;
 }
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+  }
+}
 footer .footer__mentions {
   color: #fdcb46;
   font-weight: 300;
@@ -86,6 +104,12 @@ footer .footer__mentions {
   text-decoration: none;
   margin: 5px;
 }
+@media (max-width: 576px) {
+  footer .footer__mentions {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
 footer .footer__contact {
   color: #fdcb46;
   font-weight: 300;
@@ -94,6 +118,12 @@ footer .footer__contact {
   float: right;
   text-decoration: none;
   margin: 5px;
+}
+@media (max-width: 576px) {
+  footer .footer__contact {
+    font-size: 15px;
+    padding: 0px;
+  }
 }
 footer a {
   animation: shake 600ms both infinite;
@@ -110,10 +140,23 @@ footer a {
   grid-row-gap: 30px;
   justify-content: center;
 }
+@media (max-width: 576px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .menu__card {
   box-shadow: 0px 0px 15px #dfdfdf;
   text-align: center;
   overflow: hidden;
+}
+@media (max-width: 576px) {
+  .menu__card {
+    margin: 10px 0px;
+  }
 }
 .menu__card > div:hover {
   animation: zoomin 200ms ease-out both;
@@ -123,6 +166,13 @@ footer a {
   background-color: #fcdfdb;
   padding-top: 50%;
   height: 450px;
+}
+@media (max-width: 576px) {
+  .menu__card--lanote {
+    height: 250px;
+    width: 150px;
+    padding-top: 40%;
+  }
 }
 .menu__card--lanote--logo {
   width: 10%;
@@ -144,6 +194,13 @@ footer a {
   padding-top: 50%;
   height: 450px;
 }
+@media (max-width: 576px) {
+  .menu__card--lechic {
+    height: 250px;
+    width: 150px;
+    padding-top: 40%;
+  }
+}
 .menu__card--lechic h2 {
   font-family: "Gabriela";
   background: -moz-linear-gradient(left, #c77412 0%, #905bfd 100%);
@@ -163,6 +220,13 @@ footer a {
   background-color: #f9f9f9;
   padding-top: 50%;
   height: 450px;
+}
+@media (max-width: 576px) {
+  .menu__card--ledelice {
+    height: 250px;
+    width: 150px;
+    padding-top: 40%;
+  }
 }
 .menu__card--ledelice h2 {
   font-family: "Alex Brush";
@@ -184,6 +248,13 @@ footer a {
   background-color: #fdfffd;
   padding-top: 50%;
   height: 450px;
+}
+@media (max-width: 576px) {
+  .menu__card--lapalette {
+    height: 250px;
+    width: 150px;
+    padding-top: 40%;
+  }
 }
 .menu__card--lapalette h2 {
   font-family: "Kaushan Script";
@@ -207,15 +278,14 @@ footer a {
   display: block;
   margin: auto;
   width: 300px;
+  border-radius: 10px;
   margin-bottom: 100px;
+  background-color: #579c87;
 }
 .soon__block h1 {
   color: #fdcb46;
   font-weight: 300;
   letter-spacing: 1px;
-  padding: 10px 0px;
-  background-color: #579c87;
-  border-radius: 10px;
   text-align: center;
 }
 
