@@ -4,7 +4,7 @@
 /*--variables breakpoint et mixins breakpoint--*/
 
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
+$screen-sm-min: 670px;
 // Small tablets (portrait view)
 $screen-md-min: 768px;
 // Tablets and small desktops
@@ -104,11 +104,6 @@ $lapalette2: #cbfe9a;
 
 /*mixins*/
 
-@mixin exclamation_points {
-    animation: exclamation 1000ms ease both infinite;
-    animation-direction: reverse;
-}
-
 @mixin kalam {
     font-family: map-get($font_menu, "kalam");
     font-weight: 200;
@@ -124,7 +119,6 @@ $lapalette2: #cbfe9a;
     margin: 5px;
     @include sm {
         font-size: 15px;
-        padding: 0px;
     }
 }
 
@@ -133,8 +127,8 @@ $lapalette2: #cbfe9a;
     padding-top: 50%;
     height: 450px;
     @include sm {
-        height: 250px;
-        width: 150px;
+        height: 300px;
+        width: 200px;
         padding-top: 40%;
     }
 }
@@ -244,7 +238,7 @@ footer {
         text-align: center;
         overflow: hidden;
         @include sm {
-            margin: 10px 0px;
+            margin: 20px 0px;
         }
         &>div:hover {
             animation: zoomin 200ms ease-out both;
@@ -312,22 +306,19 @@ footer {
     margin: auto;
     width: 400px;
     @include sm {
-        margin-top: 55px;
-        width: 200px;
+        margin-top: 35px;
+        width: 220px;
     }
     &__block {
         border-radius: 10px;
         margin-bottom: 100px;
         background-color: $bgcolor;
         overflow: visible;
-        &--first_exclmt {
-            @include exclamation_points;
-        }
-        &--scnd_exclmt {
-            @include exclamation_points;
-        }
-        &--third_exclmt {
-            @include exclamation_points;
+        &--exclmt {
+            margin-left: 3px;
+            letter-spacing: 4px;
+            animation: exclamation 1000ms ease both infinite;
+            animation-direction: reverse;
         }
         h1 {
             position: relative;
@@ -338,7 +329,7 @@ footer {
             text-align: center;
             overflow: visible;
             @include sm {
-                font-size: 15px;
+                font-size: 18px;
             }
         }
     }
