@@ -1,0 +1,78 @@
+.menu {
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 450px 450px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card {
+        box-shadow: 0px 0px 15px rgb(223, 223, 223);
+        text-align: center;
+        overflow: hidden;
+        @include sm {
+            margin: 20px 0px;
+        }
+        &>div:hover {
+            animation: zoomin 200ms ease-out both;
+            cursor: pointer;
+        }
+        &--lanote {
+            @include card($lanotebg);
+            &--logo {
+                width: 15%;
+            }
+            h2 {
+                font-family: map-get($font_menu, "lanoteh2");
+                color: darken($lechic1, 30%);
+                font-size: 25px;
+                letter-spacing: 1px;
+                font-weight: 200;
+            }
+            h1 {
+                font-family: map-get($font_menu, "lanoteh1");
+                color: darken($lechic1, 30%);
+                text-transform: uppercase;
+            }
+        }
+        &--lechic {
+            @include card($lechicbg);
+            h2 {
+                font-family: map-get($font_menu, "lechich2");
+                @include menu_gradient($lechic1, $lechic2);
+            }
+            h1 {
+                font-family: map-get($font_menu, "lechich1");
+                color: $lechic1;
+            }
+        }
+        &--ledelice {
+            @include card($ledelicebg);
+            h2 {
+                font-family: map-get($font_menu, "ledeliceh2");
+                @include menu_gradient($ledelice1, $ledelice2);
+            }
+            h1 {
+                color: darken($ledelice2, 20%);
+                @include kalam;
+            }
+        }
+        &--lapalette {
+            @include card($lapalettebg);
+            h2 {
+                font-family: map-get($font_menu, "lapaletteh2");
+                @include menu_gradient($lapalette1, $lapalette2);
+            }
+            h1 {
+                color: darken($lapalette2, 45%);
+                @include kalam;
+            }
+        }
+    }
+}

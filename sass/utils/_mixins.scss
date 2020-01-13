@@ -1,0 +1,63 @@
+/*mixins*/
+
+@mixin kalam {
+    font-family: map-get($font_menu, "kalam");
+    font-weight: 200;
+}
+
+@mixin footer_links($float) {
+    color: $logocolor;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    float: $float;
+    text-decoration: none;
+    margin: 5px;
+    @include sm {
+        font-size: 15px;
+    }
+}
+
+@mixin card($bgcard) {
+    background-color: $bgcard;
+    padding-top: 50%;
+    height: 450px;
+    @include sm {
+        height: 300px;
+        width: 200px;
+        padding-top: 40%;
+    }
+}
+
+@mixin menu_gradient($color1, $color2) {
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -webkit-gradient( left top, right top, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*breakpoint*/
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+}

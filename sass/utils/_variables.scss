@@ -1,0 +1,23 @@
+/*variables*/
+
+$bgcolor: #579c87;
+$logocolor: #fdcb46;
+$lanotebg: #fcdfdb;
+$lechic1: #c77412;
+$lechic2: #905bfd;
+$lechicbg: #fff5fe;
+$ledelice1: #0536e1;
+$ledelice2: #74b4f0;
+$ledelicebg: #f9f9f9;
+$lapalettebg: #fdfffd;
+$lapalette1: #3e9339;
+$lapalette2: #cbfe9a;
+
+/*--variables breakpoint et mixins breakpoint--*/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 670px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;

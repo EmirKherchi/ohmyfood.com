@@ -1,0 +1,33 @@
+.soon {
+    display: block;
+    margin: auto;
+    width: 400px;
+    @include sm {
+        margin-top: 35px;
+        width: 220px;
+    }
+    &__block {
+        border-radius: 10px;
+        margin-bottom: 100px;
+        background-color: $bgcolor;
+        overflow: visible;
+        &--exclmt {
+            margin-left: 3px;
+            letter-spacing: 4px;
+            animation: exclamation 1000ms ease both infinite;
+            animation-direction: reverse;
+        }
+        h1 {
+            position: relative;
+            color: $logocolor;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 5px 8px;
+            text-align: center;
+            overflow: visible;
+            @include sm {
+                font-size: 18px;
+            }
+        }
+    }
+}

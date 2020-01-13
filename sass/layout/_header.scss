@@ -1,0 +1,18 @@
+/*Header*/
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: $bgcolor;
+    img {
+        display: block;
+        margin: auto;
+        width: 15%;
+        @include md {
+            width: 35%;
+        }
+        @include sm {
+            width: 55%;
+        }
+    }
+}
