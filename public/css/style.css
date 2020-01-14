@@ -41,6 +41,7 @@
 }
 /*maps*/
 /*mixins*/
+/*meal*/
 /*breakpoint*/
 /*variables*/
 /*--variables breakpoint et mixins breakpoint--*/
@@ -61,6 +62,9 @@ body h1 {
 }
 body h2 {
   font-size: 23px;
+}
+body li {
+  list-style: none;
 }
 
 .soon {
@@ -98,6 +102,126 @@ body h2 {
 @media (max-width: 670px) {
   .soon__block h1 {
     font-size: 18px;
+  }
+}
+
+.meal_lanote {
+  background-color: #fcdfdb;
+  margin: 2% 20% 10% 20%;
+  padding: 3%;
+  color: #3a0b05;
+  box-shadow: 0px 0px 15px #dfdfdf;
+  font-family: "Kalam";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+@media (max-width: 670px) {
+  .meal_lanote {
+    padding-top: 10%;
+    margin: 2% 15% 10% 15%;
+  }
+}
+.meal_lanote__header {
+  margin-bottom: 20px;
+}
+.meal_lanote__header--logo {
+  display: block;
+  margin: auto;
+}
+.meal_lanote__header--logo img {
+  width: 10%;
+  margin-bottom: 0;
+}
+@media (max-width: 670px) {
+  .meal_lanote__header--logo img {
+    width: 20%;
+  }
+}
+.meal_lanote__header--title {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+@media (max-width: 670px) {
+  .meal_lanote__header--title {
+    margin-bottom: 20px;
+  }
+}
+.meal_lanote__header--title h1 {
+  font-weight: 200;
+  font-size: 45px;
+  font-family: "Ma Shan Zheng";
+  margin: 0;
+}
+@media (max-width: 670px) {
+  .meal_lanote__header--title h1 {
+    font-size: 30px;
+  }
+}
+.meal_lanote__content--title h2 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.meal_lanote__content--choice ul {
+  margin: 0;
+  padding: 30px 50px 50px 30px;
+}
+@media (max-width: 670px) {
+  .meal_lanote__content--choice ul {
+    padding: 15px 25px 25px 15px;
+  }
+}
+.meal_lanote__content--choice ul li {
+  text-align: left;
+  padding-bottom: 20px;
+}
+@media (max-width: 670px) {
+  .meal_lanote__content--choice ul li {
+    text-align: center;
+  }
+}
+.meal_lanote__content--choice ul li span {
+  font-weight: 900;
+  float: right;
+}
+@media (max-width: 670px) {
+  .meal_lanote__content--choice ul li span {
+    display: block;
+    float: none;
+    margin-top: 15px;
+  }
+}
+.meal_lanote__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ma Shan Zheng";
+}
+@media (max-width: 670px) {
+  .meal_lanote__footer {
+    flex-direction: column;
+  }
+}
+.meal_lanote__footer--title h2 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+@media (max-width: 670px) {
+  .meal_lanote__footer--title h2 {
+    font-size: 25px;
+  }
+}
+.meal_lanote__footer--logo img {
+  width: 40%;
+  position: relative;
+  left: 20px;
+}
+@media (max-width: 670px) {
+  .meal_lanote__footer--logo img {
+    position: initial;
+    width: 20%;
   }
 }
 
@@ -195,14 +319,14 @@ footer a {
 }
 .menu__card--lanote h2 {
   font-family: "Ma Shan Zheng";
-  color: #3b2205;
+  color: #691409;
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: 200;
 }
 .menu__card--lanote h1 {
   font-family: "Itim";
-  color: #3b2205;
+  color: #691409;
   text-transform: uppercase;
 }
 .menu__card--lechic {
@@ -225,6 +349,7 @@ footer a {
   background: -o-linear-gradient(left, #c77412 0%, #905bfd 100%);
   background: -ms-linear-gradient(left, #c77412 0%, #905bfd 100%);
   background: linear-gradient(to right, #c77412 0%, #905bfd 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -252,6 +377,7 @@ footer a {
   background: -o-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
   background: -ms-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
   background: linear-gradient(to right, #0536e1 0%, #74b4f0 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -280,6 +406,7 @@ footer a {
   background: -o-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
   background: -ms-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
   background: linear-gradient(to right, #3e9339 0%, #cbfe9a 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -292,8 +419,8 @@ footer a {
 /*Header*/
 header {
   width: 100%;
-  height: 15%;
   background-color: #579c87;
+  padding: 3% 0%;
 }
 header img {
   display: block;
@@ -308,6 +435,20 @@ header img {
 @media (max-width: 670px) {
   header img {
     width: 55%;
+  }
+}
+
+#meal {
+  text-align: center;
+}
+#meal h1 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+@media (max-width: 670px) {
+  #meal h1 {
+    font-size: 25px;
+    margin-top: 35px;
   }
 }
 

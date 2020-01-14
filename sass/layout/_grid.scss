@@ -30,14 +30,14 @@
             }
             h2 {
                 font-family: map-get($font_menu, "lanoteh2");
-                color: darken($lechic1, 30%);
+                color: darken($lanotebg, 70%);
                 font-size: 25px;
                 letter-spacing: 1px;
                 font-weight: 200;
             }
             h1 {
                 font-family: map-get($font_menu, "lanoteh1");
-                color: darken($lechic1, 30%);
+                color: darken($lanotebg, 70%);
                 text-transform: uppercase;
             }
         }
