@@ -115,10 +115,20 @@ body li {
   font-weight: 500;
   letter-spacing: 1px;
 }
+@media (max-width: 1100px) {
+  .meal_lanote {
+    margin: 2% 10% 10% 10%;
+  }
+}
+@media (max-width: 800px) {
+  .meal_lanote {
+    padding: 10% 0 0 0;
+    margin: 2% 15% 10% 15%;
+  }
+}
 @media (max-width: 670px) {
   .meal_lanote {
-    padding-top: 10%;
-    margin: 2% 15% 10% 15%;
+    margin-bottom: 25%;
   }
 }
 .meal_lanote__header {
@@ -164,18 +174,18 @@ body li {
 }
 .meal_lanote__content--choice ul {
   margin: 0;
-  padding: 30px 50px 50px 30px;
+  padding: 30px 50px 30px 50px;
 }
 @media (max-width: 670px) {
   .meal_lanote__content--choice ul {
-    padding: 15px 25px 25px 15px;
+    padding: 15px 0px 15px px;
   }
 }
 .meal_lanote__content--choice ul li {
   text-align: left;
   padding-bottom: 20px;
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   .meal_lanote__content--choice ul li {
     text-align: center;
   }
@@ -184,7 +194,7 @@ body li {
   font-weight: 900;
   float: right;
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   .meal_lanote__content--choice ul li span {
     display: block;
     float: none;
@@ -234,7 +244,7 @@ footer {
   padding: 20px;
   background-color: #579c87;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   footer {
     padding: 10px;
   }
@@ -427,7 +437,7 @@ header img {
   margin: auto;
   width: 15%;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header img {
     width: 35%;
   }
