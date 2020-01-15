@@ -147,7 +147,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_lanote {
-    margin-bottom: 25%;
+    margin: 2% 12% 25% 12%;
   }
 }
 .meal_lanote__header {
@@ -186,6 +186,25 @@ body li {
     font-size: 30px;
   }
 }
+.meal_lanote__content--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.meal_lanote__content--title--img2 {
+  transform: rotatey(180deg);
+}
+.meal_lanote__content--title img {
+  width: 20%;
+  margin: auto;
+}
+@media (max-width: 670px) {
+  .meal_lanote__content--title img {
+    width: 25%;
+    margin: 0px 10px;
+  }
+}
 .meal_lanote__content--title h2 {
   margin-top: 25px;
   margin-bottom: 0px;
@@ -197,34 +216,19 @@ body li {
   border-bottom: 2px solid #691409;
   width: 0%;
   left: 0%;
-  margin: 10px 35%;
+  margin: 10px 0;
   padding-bottom: 3px;
   height: 100%;
   -webkit-transition: all 600ms ease;
   transition: all 500ms ease;
 }
-@media (max-width: 800px) {
-  .meal_lanote__content--title h2:after {
-    margin: 10px 25%;
-  }
-}
 @media (max-width: 670px) {
   .meal_lanote__content--title h2:after {
-    margin: 10px 10%;
+    margin: 10px 0 0px 0;
   }
 }
 .meal_lanote__content--title h2:hover:after {
-  width: 30%;
-}
-@media (max-width: 800px) {
-  .meal_lanote__content--title h2:hover:after {
-    width: 50%;
-  }
-}
-@media (max-width: 670px) {
-  .meal_lanote__content--title h2:hover:after {
-    width: 80%;
-  }
+  width: 100%;
 }
 .meal_lanote__content--choice ul {
   margin: 0;
