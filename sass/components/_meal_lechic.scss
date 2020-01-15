@@ -13,7 +13,7 @@
         margin-bottom: 20px;
       }
       & h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-family: map-get($font_menu, "lechich2");
         margin: 0;
         @include menu_gradient($lechic1, $lechic2);
