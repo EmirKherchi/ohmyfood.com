@@ -1,5 +1,5 @@
-.meal_ledelice {
-  @include meal($ledelicebg, #000);
+.meal_lapalette {
+  @include meal($lapalettebg, #000);
   font-family: map-get($font_menu, "kalam");
   letter-spacing: 1px;
   font-weight: 500;
@@ -14,30 +14,24 @@
       }
       & h1 {
         font-size: 35px;
-        font-family: map-get($font_menu, "ledeliceh2");
+        font-family: map-get($font_menu, "lapaletteh2");
         margin: 0;
-        @include menu_gradient($ledelice1, $ledelice2);
+        @include menu_gradient($lapalette1, $lapalette2);
         @include sm {
           font-size: 20px;
         }
       }
     }
   }
-
   @include meal_content; //meal main choices for all meal pages
-}
-#ledeliceblue1 {
-  & h2:after {
-    border-color: $ledelice1;
+
+  &__content--title{
+    & h2:after {
+      border-color: $lapalette1 ;
+    }
   }
+
+  
 }
-#ledeliceblue2 {
-  & h2:after {
-    border-color: $ledelice3;
-  }
-}
-#ledeliceblue3 {
-  & h2:after {
-    border-color: $ledelice2;
-  }
-}
+
+

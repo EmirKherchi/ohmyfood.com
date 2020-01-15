@@ -95,6 +95,11 @@
   }
 }
 
+
+
+
+
+
 @mixin kalam($weight: 200) {
   font-family: map-get($font_menu, "kalam");
   font-weight: $weight;

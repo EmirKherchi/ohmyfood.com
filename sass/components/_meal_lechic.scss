@@ -2,7 +2,7 @@
   @include meal($lechicbg, darken($lechicbg, 80%));
   font-family: map-get($font_menu, "lechich1");
   letter-spacing: 1px;
-  font-weight:600;
+  font-weight:500;
 
   &__header {
     margin-bottom: 20px;

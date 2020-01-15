@@ -305,7 +305,7 @@ body li {
   box-shadow: 0px 0px 15px #dfdfdf;
   font-family: "Vidaloka";
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 1100px) {
   .meal_lechic {
@@ -457,7 +457,7 @@ body li {
   box-shadow: 0px 0px 15px #dfdfdf;
   font-family: "Kalam";
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 1100px) {
   .meal_ledelice {
@@ -590,6 +590,140 @@ body li {
 
 #ledeliceblue3 h2:after {
   border-color: #229df9;
+}
+
+.meal_lapalette {
+  background-color: #fdfffd;
+  margin: 2% 20% 10% 20%;
+  padding: 3%;
+  color: #000;
+  box-shadow: 0px 0px 15px #dfdfdf;
+  font-family: "Kalam";
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .meal_lapalette {
+    margin: 2% 10% 10% 10%;
+  }
+}
+@media (max-width: 800px) {
+  .meal_lapalette {
+    padding: 10% 0 0 0;
+    margin: 2% 15% 10% 15%;
+  }
+}
+@media (max-width: 670px) {
+  .meal_lapalette {
+    margin: 2% 12% 25% 12%;
+  }
+}
+.meal_lapalette__header {
+  margin-bottom: 20px;
+}
+.meal_lapalette__header--title {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+@media (max-width: 670px) {
+  .meal_lapalette__header--title {
+    margin-bottom: 20px;
+  }
+}
+.meal_lapalette__header--title h1 {
+  font-size: 35px;
+  font-family: "Kaushan Script";
+  margin: 0;
+  background: -moz-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #41963c), color-stop(100%, #b4f679));
+  background: -webkit-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -o-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -ms-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: linear-gradient(to right, #41963c 0%, #b4f679 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 670px) {
+  .meal_lapalette__header--title h1 {
+    font-size: 20px;
+  }
+}
+.meal_lapalette__content--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.meal_lapalette__content--title--img2 {
+  transform: rotatey(180deg);
+}
+.meal_lapalette__content--title img {
+  width: 20%;
+  margin: auto;
+}
+@media (max-width: 670px) {
+  .meal_lapalette__content--title img {
+    width: 25%;
+    margin: 0px 10px;
+  }
+}
+.meal_lapalette__content--title h2 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.meal_lapalette__content--title h2:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid;
+  width: 0%;
+  left: 0%;
+  margin: 10px 0;
+  padding-bottom: 3px;
+  height: 100%;
+  -webkit-transition: all 600ms ease;
+  transition: all 500ms ease;
+}
+@media (max-width: 670px) {
+  .meal_lapalette__content--title h2:after {
+    margin: 10px 0 0px 0;
+  }
+}
+.meal_lapalette__content--title h2:hover:after {
+  width: 100%;
+}
+.meal_lapalette__content--choice ul {
+  margin: 0;
+  padding: 30px 50px 30px 50px;
+}
+@media (max-width: 670px) {
+  .meal_lapalette__content--choice ul {
+    padding: 15px 0px 15px px;
+  }
+}
+.meal_lapalette__content--choice ul li {
+  text-align: left;
+  padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .meal_lapalette__content--choice ul li {
+    text-align: center;
+  }
+}
+.meal_lapalette__content--choice ul li span {
+  font-weight: 900;
+  float: right;
+}
+@media (max-width: 800px) {
+  .meal_lapalette__content--choice ul li span {
+    display: block;
+    float: none;
+    margin-top: 15px;
+  }
+}
+.meal_lapalette__content--title h2:after {
+  border-color: #41963c;
 }
 
 /*footer*/
@@ -767,18 +901,18 @@ footer a {
 }
 .menu__card--lapalette h2 {
   font-family: "Kaushan Script";
-  background: -moz-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #3e9339), color-stop(100%, #cbfe9a));
-  background: -webkit-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
-  background: -o-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
-  background: -ms-linear-gradient(left, #3e9339 0%, #cbfe9a 100%);
-  background: linear-gradient(to right, #3e9339 0%, #cbfe9a 100%);
+  background: -moz-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #41963c), color-stop(100%, #b4f679));
+  background: -webkit-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -o-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: -ms-linear-gradient(left, #41963c 0%, #b4f679 100%);
+  background: linear-gradient(to right, #41963c 0%, #b4f679 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu__card--lapalette h1 {
-  color: #58b102;
+  color: #418109;
   font-family: "Kalam";
   font-weight: 200;
 }
