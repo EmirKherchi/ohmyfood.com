@@ -449,6 +449,149 @@ body li {
   border-color: #6e4dc8;
 }
 
+.meal_ledelice {
+  background-color: #edefef;
+  margin: 2% 20% 10% 20%;
+  padding: 3%;
+  color: #000;
+  box-shadow: 0px 0px 15px #dfdfdf;
+  font-family: "Kalam";
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+@media (max-width: 1100px) {
+  .meal_ledelice {
+    margin: 2% 10% 10% 10%;
+  }
+}
+@media (max-width: 800px) {
+  .meal_ledelice {
+    padding: 10% 0 0 0;
+    margin: 2% 15% 10% 15%;
+  }
+}
+@media (max-width: 670px) {
+  .meal_ledelice {
+    margin: 2% 12% 25% 12%;
+  }
+}
+.meal_ledelice__header {
+  margin-bottom: 20px;
+}
+.meal_ledelice__header--title {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+@media (max-width: 670px) {
+  .meal_ledelice__header--title {
+    margin-bottom: 20px;
+  }
+}
+.meal_ledelice__header--title h1 {
+  font-size: 35px;
+  font-family: "Alex Brush";
+  margin: 0;
+  background: -moz-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #0536e1), color-stop(100%, #229df9));
+  background: -webkit-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -o-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -ms-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: linear-gradient(to right, #0536e1 0%, #229df9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 670px) {
+  .meal_ledelice__header--title h1 {
+    font-size: 20px;
+  }
+}
+.meal_ledelice__content--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.meal_ledelice__content--title--img2 {
+  transform: rotatey(180deg);
+}
+.meal_ledelice__content--title img {
+  width: 20%;
+  margin: auto;
+}
+@media (max-width: 670px) {
+  .meal_ledelice__content--title img {
+    width: 25%;
+    margin: 0px 10px;
+  }
+}
+.meal_ledelice__content--title h2 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.meal_ledelice__content--title h2:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid;
+  width: 0%;
+  left: 0%;
+  margin: 10px 0;
+  padding-bottom: 3px;
+  height: 100%;
+  -webkit-transition: all 600ms ease;
+  transition: all 500ms ease;
+}
+@media (max-width: 670px) {
+  .meal_ledelice__content--title h2:after {
+    margin: 10px 0 0px 0;
+  }
+}
+.meal_ledelice__content--title h2:hover:after {
+  width: 100%;
+}
+.meal_ledelice__content--choice ul {
+  margin: 0;
+  padding: 30px 50px 30px 50px;
+}
+@media (max-width: 670px) {
+  .meal_ledelice__content--choice ul {
+    padding: 15px 0px 15px px;
+  }
+}
+.meal_ledelice__content--choice ul li {
+  text-align: left;
+  padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .meal_ledelice__content--choice ul li {
+    text-align: center;
+  }
+}
+.meal_ledelice__content--choice ul li span {
+  font-weight: 900;
+  float: right;
+}
+@media (max-width: 800px) {
+  .meal_ledelice__content--choice ul li span {
+    display: block;
+    float: none;
+    margin-top: 15px;
+  }
+}
+
+#ledeliceblue1 h2:after {
+  border-color: #0536e1;
+}
+
+#ledeliceblue2 h2:after {
+  border-color: #0071ee;
+}
+
+#ledeliceblue3 h2:after {
+  border-color: #229df9;
+}
+
 /*footer*/
 footer {
   position: fixed;
@@ -582,7 +725,7 @@ footer a {
   color: #c77412;
 }
 .menu__card--ledelice {
-  background-color: #f9f9f9;
+  background-color: #edefef;
   padding-top: 50%;
   height: 450px;
 }
@@ -595,18 +738,18 @@ footer a {
 }
 .menu__card--ledelice h2 {
   font-family: "Alex Brush";
-  background: -moz-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #0536e1), color-stop(100%, #74b4f0));
-  background: -webkit-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
-  background: -o-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
-  background: -ms-linear-gradient(left, #0536e1 0%, #74b4f0 100%);
-  background: linear-gradient(to right, #0536e1 0%, #74b4f0 100%);
+  background: -moz-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #0536e1), color-stop(100%, #229df9));
+  background: -webkit-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -o-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: -ms-linear-gradient(left, #0536e1 0%, #229df9 100%);
+  background: linear-gradient(to right, #0536e1 0%, #229df9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu__card--ledelice h1 {
-  color: #1982e5;
+  color: #0567b0;
   font-family: "Kalam";
   font-weight: 200;
 }
