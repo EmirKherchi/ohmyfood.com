@@ -1,0 +1,47 @@
+.meal_lechic{
+  @include meal($lechicbg, darken($lechicbg, 80%));
+  font-family: map-get($font_menu, "lechich1");
+  letter-spacing: 1px;
+  font-weight:600;
+
+  &__header {
+    margin-bottom: 20px;
+    &--title {
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+      @include sm {
+        margin-bottom: 20px;
+      }
+      & h1 {
+        font-size: 45px;
+        font-family: map-get($font_menu, "lechich2");
+        margin: 0;
+        @include menu_gradient($lechic1, $lechic2);
+        @include sm {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  @include meal_content;//meal main choices for all meal pages
+ 
+}
+#lechicorange{
+  color: $lechic1;
+  & h2:after{
+    border-color: $lechic1;
+    }
+}
+#lechicpurple{
+  color: $lechic3;
+  & h2:after{
+  border-color: $lechic3;
+  }
+}
+#lechicblue{
+  color: $lechic2;
+  & h2:after{
+    border-color: $lechic2;
+    }
+}

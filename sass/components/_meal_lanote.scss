@@ -33,8 +33,12 @@
       }
     }
   }
+  & h2:after{
+    
+      border-color: darken($lanotebg, 80%);
+  }
 
-  @include meal_content(darken($lanotebg, 70%));//meal main choices for all meal pages
+  @include meal_content;//meal main choices for all meal pages
 
   &__footer {
     display: flex;

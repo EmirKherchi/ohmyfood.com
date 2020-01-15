@@ -20,7 +20,7 @@
   }
 }
 
-@mixin meal_content($bordercol) {
+@mixin meal_content {
   &__content {
     &--title {
       display: flex;
@@ -49,7 +49,7 @@
         &:after {
           content: "";
           display: block;
-          border-bottom: 2px solid $bordercol;
+          border-bottom: 2px solid;
           width: 0%;
           left: 0%;
           margin: 10px 0;
