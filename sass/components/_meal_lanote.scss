@@ -34,42 +34,37 @@
     }
   }
 
+  @include meal_content();//meal main choices for all meal pages
 
-@include meal_content();
-
-&__footer{
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center;
-  font-family: map-get($font_menu, lanoteh2);
-  @include sm{
-    flex-direction: column;
-  }
-  &--title{
-    & h2{
-      font-size: 35px;
-      letter-spacing: 2px;
-      font-weight: 500;
-      @include sm {
-        font-size: 25px;
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: map-get($font_menu, lanoteh2);
+    @include sm {
+      flex-direction: column;
+    }
+    &--title {
+      & h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        @include sm {
+          font-size: 25px;
+        }
+      }
+    }
+    &--logo {
+      & img {
+        width: 40%;
+        position: relative;
+        left: 20px;
+        @include sm {
+          position: initial;
+          width: 20%;
+        }
       }
     }
   }
-  &--logo{
-    & img{
-    width:40%;
-    position: relative;
-    left: 20px;
-    @include sm{
-      
-      position: initial;
-      width: 20%;
-    }
-    }
-  }
 }
-
-}
-    
-

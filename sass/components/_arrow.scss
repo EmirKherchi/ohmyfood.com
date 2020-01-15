@@ -1,0 +1,16 @@
+.fa-arrow-alt-circle-left{
+    font-size: 40px;
+    color: $logocolor;
+    position: fixed;
+    left: 4%;
+    bottom : 12%;
+    transition: transform ease-in 500ms;
+    @include sm{
+        font-size: 30px;
+        left:2%;
+        bottom: 10%;
+    }
+    &:hover{
+        transform: rotate(360deg);
+    }
+}

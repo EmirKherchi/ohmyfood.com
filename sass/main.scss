@@ -7,11 +7,11 @@
 @import 'base/box';
 @import 'base/font';
 
+@import 'components/arrow';
 @import 'components/soon';
 @import 'components/meal_lanote';
 
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';
-
-@import 'pages/meal'
+@import 'layout/meal'
