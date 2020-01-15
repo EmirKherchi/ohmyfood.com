@@ -72,7 +72,7 @@
         margin: 0;
         padding: 30px 50px 30px 50px;
         @include sm {
-          padding: 15px 0px 15px px;
+          padding: 15px 0px 15px 0px;
         }
         & li {
           text-align: left;
@@ -141,7 +141,6 @@
   background: -o-linear-gradient(left, $color1 0%, $color2 100%);
   background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
   background: linear-gradient(to right, $color1 0%, $color2 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

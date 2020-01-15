@@ -240,7 +240,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_lanote__content--choice ul {
-    padding: 15px 0px 15px px;
+    padding: 15px 0px 15px 0px;
   }
 }
 .meal_lanote__content--choice ul li {
@@ -345,7 +345,6 @@ body li {
   background: -o-linear-gradient(left, #c77412 0%, #6e4dc8 100%);
   background: -ms-linear-gradient(left, #c77412 0%, #6e4dc8 100%);
   background: linear-gradient(to right, #c77412 0%, #6e4dc8 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -404,7 +403,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_lechic__content--choice ul {
-    padding: 15px 0px 15px px;
+    padding: 15px 0px 15px 0px;
   }
 }
 .meal_lechic__content--choice ul li {
@@ -497,7 +496,6 @@ body li {
   background: -o-linear-gradient(left, #0536e1 0%, #229df9 100%);
   background: -ms-linear-gradient(left, #0536e1 0%, #229df9 100%);
   background: linear-gradient(to right, #0536e1 0%, #229df9 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -556,7 +554,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_ledelice__content--choice ul {
-    padding: 15px 0px 15px px;
+    padding: 15px 0px 15px 0px;
   }
 }
 .meal_ledelice__content--choice ul li {
@@ -640,7 +638,6 @@ body li {
   background: -o-linear-gradient(left, #41963c 0%, #b4f679 100%);
   background: -ms-linear-gradient(left, #41963c 0%, #b4f679 100%);
   background: linear-gradient(to right, #41963c 0%, #b4f679 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -699,7 +696,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_lapalette__content--choice ul {
-    padding: 15px 0px 15px px;
+    padding: 15px 0px 15px 0px;
   }
 }
 .meal_lapalette__content--choice ul li {
@@ -850,7 +847,6 @@ footer a {
   background: -o-linear-gradient(left, #c77412 0%, #6e4dc8 100%);
   background: -ms-linear-gradient(left, #c77412 0%, #6e4dc8 100%);
   background: linear-gradient(to right, #c77412 0%, #6e4dc8 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -878,7 +874,6 @@ footer a {
   background: -o-linear-gradient(left, #0536e1 0%, #229df9 100%);
   background: -ms-linear-gradient(left, #0536e1 0%, #229df9 100%);
   background: linear-gradient(to right, #0536e1 0%, #229df9 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -907,7 +902,6 @@ footer a {
   background: -o-linear-gradient(left, #41963c 0%, #b4f679 100%);
   background: -ms-linear-gradient(left, #41963c 0%, #b4f679 100%);
   background: linear-gradient(to right, #41963c 0%, #b4f679 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
