@@ -351,7 +351,7 @@ body li {
 }
 @media (max-width: 670px) {
   .meal_lechic__header--title h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .meal_lechic__content--title {

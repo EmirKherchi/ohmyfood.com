@@ -18,7 +18,7 @@
         margin: 0;
         @include menu_gradient($lechic1, $lechic2);
         @include sm {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
     }
