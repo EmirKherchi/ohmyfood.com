@@ -43,6 +43,9 @@
         margin-top: 25px;
         margin-bottom: 0px;
         font-size: 20px;
+        @include sm{
+          font-size: 15px;
+        }
        
         
 
