@@ -1,19 +1,15 @@
-@import 'utils/keyframes';
-@import 'utils/maps';
-@import 'utils/mixins';
 @import 'utils/variables';
-
-
+@import 'utils/mixins';
+@import 'utils/maps';
+@import 'utils/keyframes';
 @import 'base/box';
 @import 'base/font';
-
 @import 'components/arrow';
 @import 'components/soon';
 @import 'components/meal_lanote';
 @import 'components/meal_lechic';
 @import 'components/meal_ledelice';
 @import 'components/meal_lapalette';
-
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';

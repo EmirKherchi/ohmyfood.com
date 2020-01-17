@@ -1,9 +1,15 @@
+/*variables*/
+/*--variables breakpoint et mixins breakpoint--*/
+/*mixins*/
+/*meal*/
+/*breakpoint*/
+/*maps*/
 /*keyframes*/
 @keyframes exclamation {
-  to {
+  from {
     opacity: 0;
   }
-  from {
+  to {
     opacity: 1;
   }
 }
@@ -25,6 +31,18 @@
     opacity: 0.5;
   }
 }
+@media (max-width: 670px) {
+  @keyframes zoomin {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  }
+}
 @keyframes shake {
   10% {
     transform: translatex(-1px);
@@ -39,12 +57,6 @@
     transform: translatex(1px);
   }
 }
-/*maps*/
-/*mixins*/
-/*meal*/
-/*breakpoint*/
-/*variables*/
-/*--variables breakpoint et mixins breakpoint--*/
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -817,7 +829,7 @@ footer a {
   }
 }
 .menu__card > div:hover {
-  animation: zoomin 200ms ease-out both;
+  animation: zoomin 300ms ease-out both;
   cursor: pointer;
 }
 .menu__card--lanote {
@@ -968,8 +980,8 @@ header img {
 }
 
 .terms {
-  text-align: left;
-  margin: 5% 7% 15% 7%;
+  text-align: justify;
+  margin: 5% 25% 15% 10%;
 }
 @media (max-width: 800px) {
   .terms {

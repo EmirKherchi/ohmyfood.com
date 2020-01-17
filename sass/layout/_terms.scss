@@ -1,24 +1,20 @@
 .terms {
-  text-align: left;
-  margin: 5% 7% 15% 7%;
-  @include md{
-      margin-bottom: 50%;
-  }
-
-  & article{
-      margin: 4% 0;
-  }
-  
-  & strong{
-      color: $bgcolor;
-      font-weight: 900;
-  }
-
-  & h2{
-      margin-bottom: 55px;
-  }
-
-  & h3 {
-    color: $bgcolor;
-  }
+    text-align: justify;
+    margin: 5% 25% 15% 10%;
+    @include md {
+        margin-bottom: 50%;
+    }
+    & article {
+        margin: 4% 0;
+    }
+    & strong {
+        color: $bgcolor;
+        font-weight: 900;
+    }
+    & h2 {
+        margin-bottom: 55px;
+    }
+    & h3 {
+        color: $bgcolor;
+    }
 }

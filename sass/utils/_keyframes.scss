@@ -1,11 +1,10 @@
-
 /*keyframes*/
 
 @keyframes exclamation {
-    to {
+    from {
         opacity: 0;
     }
-    from {
+    to {
         opacity: 1;
     }
 }
@@ -26,6 +25,19 @@
     100% {
         transform: scale(1.5);
         opacity: 0.5;
+    }
+}
+
+@include sm {
+    @keyframes zoomin {
+        from {
+            transform: scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
     }
 }
 
