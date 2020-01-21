@@ -12,7 +12,7 @@
       @include sm {
         margin-bottom: 20px;
       }
-      & h1 {
+      & h2 {
         font-size: 35px;
         font-family: map-get($font_menu, "ledeliceh2");
         margin: 0;
@@ -27,17 +27,17 @@
   @include meal_content; //meal main choices for all meal pages
 }
 #ledeliceblue1 {
-  & h2:after {
+  & h3:after {
     border-color: $ledelice1;
   }
 }
 #ledeliceblue2 {
-  & h2:after {
+  & h3:after {
     border-color: $ledelice3;
   }
 }
 #ledeliceblue3 {
-  & h2:after {
+  & h3:after {
     border-color: $ledelice2;
   }
 }

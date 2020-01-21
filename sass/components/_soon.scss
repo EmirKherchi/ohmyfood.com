@@ -16,7 +16,7 @@
             letter-spacing: 4px;
             animation: exclamation 2000ms 1000ms ease both infinite;
         }
-        h1 {
+        h2 {
             position: relative;
             color: $logocolor;
             font-weight: 300;
@@ -24,8 +24,9 @@
             padding: 5px 8px;
             text-align: center;
             overflow: visible;
+            font-size: 35px;
             @include sm {
-                font-size: 18px;
+                font-size: 20px;
             }
         }
     }

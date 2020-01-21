@@ -31,14 +31,18 @@
             h2 {
                 font-family: map-get($font_menu, "lanoteh2");
                 color: darken($lanotebg, 70%);
-                font-size: 25px;
+                font-size: 30px;
                 letter-spacing: 1px;
                 font-weight: 200;
+                @include sm{
+                    font-size: 25px;
+                }
             }
-            h1 {
+            h3{
                 font-family: map-get($font_menu, "lanoteh1");
                 color: darken($lanotebg, 70%);
                 text-transform: uppercase;
+                font-size: 35px;
             }
         }
         &--lechic {
@@ -46,10 +50,12 @@
             h2 {
                 font-family: map-get($font_menu, "lechich2");
                 @include menu_gradient($lechic1, $lechic2);
+                font-size: 22px;
             }
-            h1 {
+            h3 {
                 font-family: map-get($font_menu, "lechich1");
                 color: $lechic1;
+                font-size: 35px;
             }
         }
         &--ledelice {
@@ -57,10 +63,12 @@
             h2 {
                 font-family: map-get($font_menu, "ledeliceh2");
                 @include menu_gradient($ledelice1, $ledelice2);
+                font-size: 30px;
             }
-            h1 {
+            h3 {
                 color: darken($ledelice2, 20%);
                 @include kalam;
+                font-size: 35px;
             }
         }
         &--lapalette {
@@ -68,10 +76,14 @@
             h2 {
                 font-family: map-get($font_menu, "lapaletteh2");
                 @include menu_gradient($lapalette1, $lapalette2);
+                @include sm{
+                    font-size: 20px;
+                }
             }
-            h1 {
+            h3 {
                 color: darken($lapalette2, 45%);
                 @include kalam;
+                font-size: 35px;
             }
         }
     }

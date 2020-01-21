@@ -22,7 +22,7 @@
       @include sm {
         margin-bottom: 20px;
       }
-      & h1 {
+      & h2{
         font-weight: 200;
         font-size: 45px;
         font-family: map-get($font_menu, lanoteh2);
@@ -33,7 +33,7 @@
       }
     }
   }
-  & h2:after{
+  & h3:after{
     
       border-color: darken($lanotebg, 80%);
   }

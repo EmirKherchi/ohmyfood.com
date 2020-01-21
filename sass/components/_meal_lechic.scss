@@ -12,7 +12,7 @@
       @include sm {
         margin-bottom: 20px;
       }
-      & h1 {
+      & h2 {
         font-size: 35px;
         font-family: map-get($font_menu, "lechich2");
         margin: 0;
@@ -29,19 +29,19 @@
 }
 #lechicorange{
   color: $lechic1;
-  & h2:after{
+  & h3:after{
     border-color: $lechic1;
     }
 }
 #lechicpurple{
   color: $lechic3;
-  & h2:after{
+  & h3:after{
   border-color: $lechic3;
   }
 }
 #lechicblue{
   color: $lechic2;
-  & h2:after{
+  & h3:after{
     border-color: $lechic2;
     }
 }

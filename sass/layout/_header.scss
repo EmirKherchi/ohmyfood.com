@@ -4,15 +4,12 @@ header {
     width: 100%;
     background-color: $bgcolor;
     padding: 3% 0%;
-    img {
-        display: block;
-        margin: auto;
-        width: 15%;
-        @include md {
-            width: 35%;
-        }
-        @include sm {
-            width: 55%;
-        }
+    
+    h1{
+        letter-spacing: -2px;
+        color: $logocolor;
+        text-align: center;
+        margin: 0;
+        font-size: 60px;
     }
 }
