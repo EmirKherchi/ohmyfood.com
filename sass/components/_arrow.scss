@@ -1,16 +1,22 @@
-.fa-arrow-alt-circle-left{
+.fa-arrow-alt-circle-left {
     font-size: 40px;
     color: $logocolor;
     position: fixed;
     left: 4%;
-    bottom : 12%;
+    bottom: 12%;
+    -webkit-transition: -webkit-transform ease-in 500ms;
+    transition: -webkit-transform ease-in 500ms;
+    -o-transition: transform ease-in 500ms;
     transition: transform ease-in 500ms;
-    @include sm{
+    transition: transform ease-in 500ms, -webkit-transform ease-in 500ms;
+    @include sm {
         font-size: 30px;
-        left:2%;
+        left: 2%;
         bottom: 10%;
     }
-    &:hover{
+    &:hover {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }

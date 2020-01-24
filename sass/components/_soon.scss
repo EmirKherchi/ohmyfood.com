@@ -14,7 +14,8 @@
         &--exclmt {
             margin-left: 3px;
             letter-spacing: 4px;
-            animation: exclamation 2000ms 1000ms ease both infinite;
+            -webkit-animation: exclamation 1000ms ease infinite;
+            animation: exclamation 1000ms ease infinite;
         }
         h2 {
             position: relative;

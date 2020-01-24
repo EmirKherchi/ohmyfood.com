@@ -1,18 +1,33 @@
 .menu {
     margin: 5% 0;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 300px 30px 300px;
     grid-template-columns: 300px 300px;
+    -ms-grid-rows: 450px 30px 450px;
     grid-template-rows: 450px 450px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     @include sm {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     &__card {
+        -webkit-box-shadow: 0px 0px 15px rgb(223, 223, 223);
         box-shadow: 0px 0px 15px rgb(223, 223, 223);
         text-align: center;
         overflow: hidden;
@@ -20,8 +35,8 @@
             margin: 20px 0px;
         }
         &>div:hover {
+            -webkit-animation: zoomin 300ms ease-out both;
             animation: zoomin 300ms ease-out both;
-            cursor: pointer;
         }
         &--lanote {
             @include card($lanotebg);
@@ -34,11 +49,11 @@
                 font-size: 30px;
                 letter-spacing: 1px;
                 font-weight: 200;
-                @include sm{
+                @include sm {
                     font-size: 25px;
                 }
             }
-            h3{
+            h3 {
                 font-family: map-get($font_menu, "lanoteh1");
                 color: darken($lanotebg, 70%);
                 text-transform: uppercase;
@@ -76,7 +91,7 @@
             h2 {
                 font-family: map-get($font_menu, "lapaletteh2");
                 @include menu_gradient($lapalette1, $lapalette2);
-                @include sm{
+                @include sm {
                     font-size: 20px;
                 }
             }
