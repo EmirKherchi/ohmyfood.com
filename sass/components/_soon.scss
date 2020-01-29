@@ -11,11 +11,20 @@
         margin-bottom: 100px;
         background-color: $bgcolor;
         overflow: visible;
-        &--exclmt {
+        &--pulsate1 {
             margin-left: 3px;
-            letter-spacing: 4px;
-            -webkit-animation: exclamation 1000ms ease infinite;
-            animation: exclamation 1000ms ease infinite;
+            animation: pulsate 800ms 100ms alternate-reverse ease-out;
+            animation-iteration-count: infinite;
+        }
+        &--pulsate2 {
+            margin-left: 3px;
+            animation: pulsate 800ms 300ms alternate-reverse ease-out;
+            animation-iteration-count: infinite;
+        }
+        &--pulsate3 {
+            margin-left: 3px;
+            animation: pulsate 800ms 600ms alternate-reverse ease-out;
+            animation-iteration-count: infinite;
         }
         h2 {
             position: relative;
