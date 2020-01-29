@@ -14,7 +14,7 @@ footer {
     .footer__contact {
         @include footer_links(right);
     }
-    & a {
+    & a:hover {
         -webkit-animation: shake 600ms infinite;
         animation: shake 600ms infinite;
     }
